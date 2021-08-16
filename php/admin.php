@@ -91,7 +91,7 @@
 
                 <th>ID</th>
                 <th>Username</th>
-                <th>Password</th>
+                <!-- <th>Password</th> -->
                 <th>rol_id</th>
                 
                 <?php 
@@ -102,7 +102,7 @@
                     <tr class ="odd">
                         <td><?php echo $fila['id']?></td>
                         <td><?php echo $fila['username']?></td>
-                        <td><?php echo $fila['password']?></td>
+                        <!-- <td><?php echo $fila['password']?></td> -->
                         <td><?php echo $fila['rol_id']?></td>
                     </tr>
                     <?php
@@ -132,6 +132,7 @@
                 <th>Inicio Producción</th>
                 <th>Fin Producción</th>
                 <th>Tipo piezas</th>
+                <th>No. piezas</th>
                 <th>No. piezas defectuosas</th>
                 <th>Responsable</th>
                 
@@ -147,6 +148,7 @@
                         <td><?php echo $fila['inicio_prod']?></td>
                         <td><?php echo $fila['fin_prod']?></td>
                         <td><?php echo $fila['tipo_piezas']?></td>
+                        <td><?php echo $fila['no_piezas']?></td>
                         <td><?php echo $fila['no_piezas_def']?></td>
                         <td><?php echo $fila['responsable']?></td>
                     </tr>

@@ -349,7 +349,7 @@ html {
         position: absolute;
         top: 64px;
         left: 0;
-        height: 100px;
+        height: 130px;
         background: #370bd4cb;
         width: 100%;
         display: none;
@@ -411,13 +411,10 @@ html {
     #politicas .texto {
         width: 100%;
     }
-    /*#contacto form {
-        width: 100%;
-        flex-direction: column;
+    table{
+        display: block;
+        overflow-x: auto;
     }
-    input[type="text"], input[type="email"] {
-        width: 100%
-    }*/
     .contacto-info {
         display: grid;
         justify-content: space-around;
@@ -437,4 +434,14 @@ html {
         justify-content: space-around;
         margin-top: 60px;
     }
+    table{
+        display: block;
+        overflow-x: auto;
+    }
   }
+  table{
+	background-color: white;
+	text-align: center;
+	border-collapse: collapse;
+	width: 100%;
+}

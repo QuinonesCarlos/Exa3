@@ -94,6 +94,7 @@
                 <th>Inicio Producción</th>
                 <th>Fin Producción</th>
                 <th>Tipo piezas</th>
+                <th>No. piezas</th>
                 <th>No. piezas defectuosas</th>
                 <th>Responsable</th>
                 
@@ -109,6 +110,7 @@
                         <td><?php echo $fila['inicio_prod']?></td>
                         <td><?php echo $fila['fin_prod']?></td>
                         <td><?php echo $fila['tipo_piezas']?></td>
+                        <td><?php echo $fila['no_piezas']?></td>
                         <td><?php echo $fila['no_piezas_def']?></td>
                         <td><?php echo $fila['responsable']?></td>
                     </tr>
@@ -124,8 +126,8 @@
                     <div class="contenedor">
                         <h3>¿Qué desea hacer?</h3>
                         <a href="addlote.php">Agregar</a>
-                        <a href="updatelote.php">Modificar</a>
-                        <a href="deletelote.php">Eliminar</a>
+                        <!-- <a href="updatelote.php">Modificar</a>
+                        <a href="deletelote.php">Eliminar</a> -->
                     </div>
                 </section>
 

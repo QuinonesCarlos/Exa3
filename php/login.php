@@ -114,11 +114,8 @@
         </div>
     </div>
 
-</header>
-
-<body>
-
-<footer>
+    <br><br><br><br><br><br>
+    <footer>
         <div class="contenedor">
             <div class="redes">
                 <a href="https://www.facebook.com//"><img src="../imagenes/facebook.png"></a>
@@ -131,6 +128,10 @@
             </div>
         </div>
     </footer>
+
+</header>
+
+<body>
 
 </body>
 
