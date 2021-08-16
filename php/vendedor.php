@@ -5,7 +5,7 @@
     if(!isset($_SESSION['rol'])){
         header('location: login.php');
     }else{
-        if($_SESSION['rol'] != 1){
+        if($_SESSION['rol'] != 2){
             header('location: login.php');
         }
     }
@@ -41,14 +41,14 @@
         <div class="menu">
 
             <div class="contenedor">
-                <a href="#">
+                <a href="javascript:location.reload()">
                     <p class="logo" id="chico">TicOSolutions</p>
                 </a>
                 <img class="menu-icon" src="../imagenes/menu.png">
                 <nav>
                     <ul>
                         <li><a><?php echo $usr?></a></li>
-                        <li><a href="#">Configuración</a></li>
+                        <li><a href="configuracion.php">Configuración</a></li>
                         <li><a href="cerrarsesion.php">Cerrar sesión</a></li>
                     </ul>
                 </nav>
@@ -59,9 +59,9 @@
         <center>
             <div class="contenedor" id="contenedor-titulo-flex">
                 <div class="contenedor-titulo">
-                    <div class="segundo-logo">
-                        <h1 id="uno">Administración</h1>
-                    </div>
+                    
+                        <h1 id="uno">Producción</h1>
+                    
                     <br>
                     <a href="#tablas">Administrar</a>
                 </div>
@@ -82,46 +82,6 @@
     </header>
 
     <section id="tablas">
-    <div class="contenedor">
-            <h3>Administración de usuarios</h3>
-            <div class="contenedor-sobremi">
-            <div class="texto">
-            <center>
-            <table border="2">
-
-                <th>ID</th>
-                <th>Username</th>
-                <th>Password</th>
-                <th>rol_id</th>
-                
-                <?php 
-                    include 'conexion.php';
-                $resultados = mysqli_query($conexion,"Select * from usuarios");
-                    while ($fila = mysqli_fetch_array($resultados)) {
-                    ?>
-                    
-                    
-                    <tr class ="odd">
-                        <td><?php echo $fila['id']?></td>
-                        <td><?php echo $fila['username']?></td>
-                        <td><?php echo $fila['password']?></td>
-                        <td><?php echo $fila['rol_id']?></td>
-                    </tr>
-                    <?php
-                    } ?>
-            </table>
-            </center>
-            </div>
-            </div>
-        </div>
-                <section id="que-esperas">
-                    <div class="contenedor">
-                        <h3>¿Qué desea hacer?</h3>
-                        <a href="insertar.php">Agregar</a>
-                        <a href="actualizaradmin.php">Modificar</a>
-                        <a href="eliminar.php">Eliminar</a>
-                    </div>
-                </section>
 
         <div class="contenedor">
             <h3>Administración de lotes</h3>
@@ -131,10 +91,10 @@
             <table border="2">
 
                 <th>No</th>
-                <th>Inicio Prod</th>
-                <th>Fin Prod</th>
+                <th>Inicio Producción</th>
+                <th>Fin Producción</th>
                 <th>Tipo piezas</th>
-                <th>No piezas defectuosas</th>
+                <th>No. piezas defectuosas</th>
                 <th>Responsable</th>
                 
                 <?php 
@@ -163,9 +123,9 @@
                 <section id="que-esperas">
                     <div class="contenedor">
                         <h3>¿Qué desea hacer?</h3>
-                        <a href="nuevoproducto.php">Agregar</a>
-                        <a href="actualizarproducto.php">Modificar</a>
-                        <a href="eliminarproducto.php">Eliminar</a>
+                        <a href="addlote.php">Agregar</a>
+                        <a href="updatelote.php">Modificar</a>
+                        <a href="deletelote.php">Eliminar</a>
                     </div>
                 </section>
 

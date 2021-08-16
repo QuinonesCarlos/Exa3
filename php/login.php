@@ -84,13 +84,13 @@
 <header>
     <div class="menu">
         <div class="contenedor">
-            <a href="javascript:document.location.reload();">
+            <a href="../index.html">
                 <p class="logo">TicOSolutions</p>
             </a>
             <!-- <img class="menu-icon" src="../imagenes/menu.png" alt=""> -->
             <nav>
                 <ul class="lista-menu">
-                    <li><a href="../html/registrar.html">Registrarme</a></li>
+                    <li><a href="../registrar.html">Registrarme</a></li>
                 </ul>
             </nav>
         </div>

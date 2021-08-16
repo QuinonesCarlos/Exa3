@@ -41,14 +41,14 @@
         <div class="menu">
 
             <div class="contenedor">
-                <a href="#">
+                <a href="javascript:location.reload()">
                     <p class="logo" id="chico">TicOSolutions</p>
                 </a>
                 <img class="menu-icon" src="../imagenes/menu.png">
                 <nav>
                     <ul>
                         <li><a><?php echo $usr?></a></li>
-                        <li><a href="#">Configuración</a></li>
+                        <li><a href="configuracion.php">Configuración</a></li>
                         <li><a href="cerrarsesion.php">Cerrar sesión</a></li>
                     </ul>
                 </nav>
@@ -59,9 +59,9 @@
         <center>
             <div class="contenedor" id="contenedor-titulo-flex">
                 <div class="contenedor-titulo">
-                    <div class="segundo-logo">
+                    
                         <h1 id="uno">Administración</h1>
-                    </div>
+                    
                     <br>
                     <a href="#tablas">Administrar</a>
                 </div>
@@ -96,11 +96,9 @@
                 
                 <?php 
                     include 'conexion.php';
-                $resultados = mysqli_query($conexion,"Select * from usuarios");
+                    $resultados = mysqli_query($conexion,"Select * from usuarios");
                     while ($fila = mysqli_fetch_array($resultados)) {
-                    ?>
-                    
-                    
+                ?>
                     <tr class ="odd">
                         <td><?php echo $fila['id']?></td>
                         <td><?php echo $fila['username']?></td>
@@ -117,9 +115,9 @@
                 <section id="que-esperas">
                     <div class="contenedor">
                         <h3>¿Qué desea hacer?</h3>
-                        <a href="insertar.php">Agregar</a>
-                        <a href="actualizaradmin.php">Modificar</a>
-                        <a href="eliminar.php">Eliminar</a>
+                        <a href="adduser.php">Agregar</a>
+                        <a href="updateuser.php">Modificar</a>
+                        <a href="deleteuser.php">Eliminar</a>
                     </div>
                 </section>
 
@@ -131,10 +129,10 @@
             <table border="2">
 
                 <th>No</th>
-                <th>Inicio Prod</th>
-                <th>Fin Prod</th>
+                <th>Inicio Producción</th>
+                <th>Fin Producción</th>
                 <th>Tipo piezas</th>
-                <th>No piezas defectuosas</th>
+                <th>No. piezas defectuosas</th>
                 <th>Responsable</th>
                 
                 <?php 
@@ -163,9 +161,9 @@
                 <section id="que-esperas">
                     <div class="contenedor">
                         <h3>¿Qué desea hacer?</h3>
-                        <a href="nuevoproducto.php">Agregar</a>
-                        <a href="actualizarproducto.php">Modificar</a>
-                        <a href="eliminarproducto.php">Eliminar</a>
+                        <a href="addlote.php">Agregar</a>
+                        <a href="updatelote.php">Modificar</a>
+                        <a href="deletelote.php">Eliminar</a>
                     </div>
                 </section>
 

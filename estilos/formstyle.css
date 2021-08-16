@@ -229,7 +229,7 @@ fieldset {
   cursor: pointer;
   width: 100%;
   border: none;
-  background: rgb(83, 76, 175);
+  background: rgba(3, 28, 255, 0.664);
   color: #FFF;
   margin: 0 0 5px;
   padding: 10px;
